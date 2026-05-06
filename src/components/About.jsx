@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { motion } from 'framer-motion';
 import { User, GraduationCap, Briefcase, Heart } from 'lucide-react';
+import profileImg from '../assets/Profile.png';
 
 
 
@@ -19,7 +20,7 @@ export default function About() {
           <div className="relative z-10 rounded-3xl overflow-hidden border border-white/10 aspect-[4/5] bg-secondary">
              {/* Using a placeholder visual since I don't have the real image */}
              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                <img src="/src/assets/profile.png" className='h-fit' alt="" />
+                <img src={profileImg} className='h-fit w-full object-cover' alt="Mohammed Aayyan" />
              </div>
              {/* Gradient Overlay */}
              <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60" />
