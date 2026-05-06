@@ -58,7 +58,7 @@ export default function Services() {
         </motion.h3>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8">
         {services.map((service, index) => (
           <motion.div
             key={index}
@@ -66,13 +66,13 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
-            className="glass-card p-10 group hover:border-primary/30 transition-colors"
+            className="glass-card p-4 sm:p-6 md:p-10 group hover:border-primary/30 transition-colors flex flex-col items-center text-center md:items-start md:text-left"
           >
-            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
-              <service.icon size={28} />
+            <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3 md:mb-6 text-primary group-hover:scale-110 transition-transform">
+              <service.icon className="w-5 h-5 md:w-7 md:h-7" />
             </div>
-            <h4 className="text-xl font-bold mb-4">{service.title}</h4>
-            <p className="text-muted-foreground leading-relaxed">
+            <h4 className="text-sm md:text-xl font-bold mb-2 md:mb-4">{service.title}</h4>
+            <p className="text-xs md:text-base text-muted-foreground leading-relaxed">
               {service.description}
             </p>
           </motion.div>

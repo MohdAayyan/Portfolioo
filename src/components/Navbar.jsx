@@ -7,8 +7,8 @@ const navLinks = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
   { name: 'Skills', href: '#skills' },
-  { name: 'Projects', href: '#projects' },
   { name: 'Services', href: '#services' },
+  { name: 'Projects', href: '#projects' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -52,12 +52,15 @@ export default function Navbar() {
 
         {/* Desktop Socials */}
         <div className="hidden md:flex items-center space-x-4">
-          <a href="#" className="p-2 text-white/70 hover:text-primary transition-colors">
-            <Github size={20} />
-          </a>
-          <a href="#" className="p-2 text-white/70 hover:text-primary transition-colors">
-            <Linkedin size={20} />
-          </a>
+          <a href="https://github.com/mohdaayyan" target="_blank" rel="noopener noreferrer">
+                  <Github size={24} className="text-white/70 hover:text-white" />
+                </a>
+          <a href="https://www.linkedin.com/in/mohd-aayyan" target="_blank" rel="noopener noreferrer">
+                  <Linkedin size={24} className="text-white/70 hover:text-white" />
+                </a>
+          <a href="https://twitter.com/DrSoanpapdi" target="_blank" rel="noopener noreferrer">
+                  <Twitter size={24} className="text-white/70 hover:text-white" />
+                </a>
         </div>
 
         {/* Mobile Toggle */}
