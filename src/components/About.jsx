@@ -17,13 +17,10 @@ export default function About() {
           viewport={{ once: true }}
           className="relative group"
         >
-          <div className="relative z-10 rounded-3xl overflow-hidden border border-white/10 aspect-[4/5] bg-secondary">
-             {/* Using a placeholder visual since I don't have the real image */}
-             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                <img src={profileImg} className='h-fit w-full object-cover' alt="Mohammed Aayyan" />
-             </div>
+          <div className="relative z-10 rounded-3xl overflow-hidden border border-white/10 bg-secondary">
+             <img src={profileImg} className="w-full h-auto object-cover object-center" alt="Mohammed Aayyan" />
              {/* Gradient Overlay */}
-             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60" />
+             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60 pointer-events-none" />
           </div>
           
           {/* Decorative Frames */}

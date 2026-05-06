@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Layers, Monitor, Smartphone } from 'lucide-react';
+import { ExternalLink, Github, Layers, Monitor, Smartphone, Target } from 'lucide-react';
 import sonarImg from '../assets/sonar.webp';
 
 
@@ -10,7 +10,7 @@ const projects = [
     description: "A high-performance web application designed to help users track and manage their daily nutritional intake with precision.",
     tech: ["React", "Tailwind CSS", "JavaScript"],
     link: "https://mohdaayyan.github.io/Calorie-Calculator/",
-    github: "#",
+    github: "https://github.com/MohdAayyan/Calorie-Calculator",
     type: "Web App",
     icon: Monitor,
     image: "https://images.unsplash.com/photo-1490818387583-1baba5e638af?auto=format&fit=crop&q=80&w=800"
@@ -93,7 +93,7 @@ export default function Projects() {
                 <a href={project.github} className="p-3 bg-white/10 hover:bg-white/20 rounded-full text-white transition-colors">
                   <Github size={20} />
                 </a>
-                <a href={project.link} className="p-3 bg-primary hover:bg-primary/80 rounded-full text-white transition-colors">
+                <a href={project.link}  className="p-3 bg-primary hover:bg-primary/80 rounded-full text-white transition-colors">
                   <ExternalLink size={20} />
                 </a>
               </div>
